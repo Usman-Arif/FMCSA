@@ -5,7 +5,6 @@ import Box from '@mui/material/Box';
 import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-import DataGridCustom from '@/components/datagrid';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 
@@ -58,7 +57,6 @@ export default function ToggleColorMode() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <MyApp />
-        <DataGridCustom />
       </ThemeProvider>
     </ColorModeContext.Provider>
   );
